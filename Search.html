@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnMore l Unlock your knowledge</title>
+      <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">  
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="IMG/FV Learenmore.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Search.css" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search here....."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <a href="Index.html"><button class="button-value" >
+         &#8592; 
+        </button></a>
+        <button class="button-value" onclick="filterProduct('all')">
+          All
+        </button>
+        <button class="button-value" onclick="filterProduct('Skills')">
+          Skills
+        </button>
+        <button class="button-value" onclick="filterProduct('History')">
+          History
+        </button>
+        <button class="button-value" onclick="filterProduct('Biography')">
+          Biography
+        </button>
+        <button class="button-value" onclick="filterProduct('Quiz')">
+          Quiz
+        </button>
+        <button class="button-value" onclick="filterProduct('Events')">
+          Events
+        </button>       
+      </div>
+      <div id="products"></div>
+    </div>
+
+    <!-- TOP BUTTON  -->
+    <div id="progress">
+      <span id="progress-value">&#8679;</span>
+    </div>
+    <!-- TOP BUTTON  -->
+  
+    <!-- Script -->
+    <script src="Search.js"></script>
+  </body>
+</html>
